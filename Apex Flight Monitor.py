@@ -1,3 +1,8 @@
+#Author:
+#Vitor Liston, 2019
+
+
+
 from PyQt5.QtWidgets import QMainWindow, QMessageBox, QDialog, QFileDialog, QApplication, QSystemTrayIcon, QSplashScreen
 from PyQt5.QtGui import QPixmap, QIcon, QQuaternion
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
