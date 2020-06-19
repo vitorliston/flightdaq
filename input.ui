@@ -1,0 +1,1842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1151</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Apex Flight Monitor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>1</horstretch>
+     <verstretch>1</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <item row="0" column="0" rowspan="2">
+     <widget class="QTabWidget" name="Setup">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Flight Summary</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_24">
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>350</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Mission Status</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_21">
+           <item row="0" column="0">
+            <layout class="QFormLayout" name="formLayout_4">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_17">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Flight duration</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_19">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Parachute deploy</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_21">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Ground hit</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="flightdur">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="pardeploy">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="groundhit">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_23">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>19999</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Plot</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_15">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="plotlayout"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>403</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>3D View</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gyrolayout"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>75</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Stages</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="topMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>8</number>
+           </property>
+           <property name="bottomMargin">
+            <number>9</number>
+           </property>
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_6">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>N/A</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Apogee</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QLabel" name="label_8">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>N/A</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Ignition</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="7">
+            <widget class="QLabel" name="label_11">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Parachute descent</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Free Ascension</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_5">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>N/A</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QLabel" name="label_13">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>N/A</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="8">
+            <widget class="QLabel" name="label_26">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>N/A</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="6">
+            <widget class="QLabel" name="label_24">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>N/A</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLabel" name="label_9">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Free descent</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLabel" name="label_7">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>N/A</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="7">
+            <widget class="QLabel" name="label_25">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>N/A</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QLabel" name="label_10">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Parachute deployment</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Thrusted ascension</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8">
+            <widget class="QLabel" name="label_12">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Ground</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_37">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Preflight check</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_39">
+             <property name="text">
+              <string>Not ready</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>650</width>
+            <height>130</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16666</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Flight data</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="4" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="sangch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Angular</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="sangval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>Angular</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="13">
+              <widget class="QLabel" name="label_20">
+               <property name="text">
+                <string>T1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8">
+              <widget class="QLabel" name="aangval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="14">
+              <widget class="QLabel" name="t2val">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="11">
+              <widget class="QLabel" name="latitudeval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_32">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QLabel" name="label_33">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10">
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>Latitude</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_74">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="6">
+              <widget class="QCheckBox" name="aangch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="9">
+              <widget class="QLabel" name="label_76">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="12">
+              <widget class="QLabel" name="label_93">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="0" alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_64">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Speed</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4" alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_73">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Health</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3" alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_71">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Position</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_68">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Acceleration</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_22">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Orientation</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="5" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_12">
+             <item row="0" column="5">
+              <widget class="QLabel" name="label_66">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8">
+              <widget class="QLabel" name="atopval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="11">
+              <widget class="QLabel" name="longval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="14">
+              <widget class="QLabel" name="t3val">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_67">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="stopval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10">
+              <widget class="QLabel" name="label_63">
+               <property name="text">
+                <string>Longitude</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_42">
+               <property name="text">
+                <string>Top</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_75">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLabel" name="label_62">
+               <property name="text">
+                <string>Top</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="13">
+              <widget class="QLabel" name="label_69">
+               <property name="text">
+                <string>T2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="12">
+              <widget class="QLabel" name="label_80">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="9">
+              <widget class="QLabel" name="label_77">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="6">
+              <widget class="QCheckBox" name="atopch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="stopch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="7">
+              <widget class="QLabel" name="label_36">
+               <property name="text">
+                <string>Horizontal</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="shorch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8">
+              <widget class="QLabel" name="ahorval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_34">
+               <property name="text">
+                <string>Horizontal</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10">
+              <widget class="QLabel" name="label_40">
+               <property name="text">
+                <string>Horizontal</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="11">
+              <widget class="QLabel" name="phorval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QLabel" name="orolval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="14">
+              <widget class="QLabel" name="t1val">
+               <property name="text">
+                <string>Offline</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="13">
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>GPS</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="shorval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QCheckBox" name="orolch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_30">
+               <property name="text">
+                <string>Roll</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="6">
+              <widget class="QCheckBox" name="ahorch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="9">
+              <widget class="QCheckBox" name="phorch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="12">
+              <widget class="QLabel" name="label_92">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="sabsch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QCheckBox" name="opitch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="14">
+              <widget class="QLabel" name="comsval">
+               <property name="text">
+                <string>Offline</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10">
+              <widget class="QLabel" name="label_60">
+               <property name="text">
+                <string>Abs. Dist.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_23">
+               <property name="text">
+                <string>Pitch</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="sabsval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLabel" name="label_56">
+               <property name="text">
+                <string>Abs.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="13">
+              <widget class="QLabel" name="label_58">
+               <property name="text">
+                <string>Coms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8">
+              <widget class="QLabel" name="aabsval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_54">
+               <property name="text">
+                <string>Abs.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="11">
+              <widget class="QLabel" name="pabsval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QLabel" name="opitval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="6">
+              <widget class="QCheckBox" name="aabsch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="9">
+              <widget class="QCheckBox" name="pabsch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="12">
+              <widget class="QLabel" name="label_79">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="0" column="3">
+              <widget class="QCheckBox" name="oyawch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="sverch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="sverval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_44">
+               <property name="text">
+                <string>Vertical</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLabel" name="label_46">
+               <property name="text">
+                <string>Vertical</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="13">
+              <widget class="QLabel" name="label_48">
+               <property name="text">
+                <string>Parachute</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8">
+              <widget class="QLabel" name="averval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10">
+              <widget class="QLabel" name="label_50">
+               <property name="text">
+                <string>Altitude</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="14">
+              <widget class="QLabel" name="parachuteval">
+               <property name="text">
+                <string>Online</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="11">
+              <widget class="QLabel" name="paltval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QLabel" name="oyawval">
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_28">
+               <property name="text">
+                <string>Yaw</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="6">
+              <widget class="QCheckBox" name="averch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="9">
+              <widget class="QCheckBox" name="paltch">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="12">
+              <widget class="QLabel" name="label_78">
+               <property name="maximumSize">
+                <size>
+                 <width>13</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Flight Analysis</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="minimumSize">
+           <size>
+            <width>575</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>575</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Add plot</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_45">
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QComboBox" name="yaxisname">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_15">
+             <property name="maximumSize">
+              <size>
+               <width>14</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>X</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_35">
+             <property name="maximumSize">
+              <size>
+               <width>14</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Y</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="plotname">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QComboBox" name="xaxisname">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QPushButton" name="baddplot">
+             <property name="minimumSize">
+              <size>
+               <width>60</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>60</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Add</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>250</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Remove plot</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_17">
+           <item row="0" column="1">
+            <widget class="QComboBox" name="listdelplot">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_52">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="bdelplot">
+             <property name="minimumSize">
+              <size>
+               <width>60</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>60</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Remove</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="groupBox_12">
+          <property name="minimumSize">
+           <size>
+            <width>175</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>175</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Open flight log</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="bopenlog">
+             <property name="text">
+              <string>Select file</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="4">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>Plots</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="flightanlayout"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Console</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="0" column="0">
+         <widget class="QTextEdit" name="consolewin"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Setup</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>9</y>
+          <width>205</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Receiver</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_18">
+         <item row="0" column="0">
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_70">
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="receivername"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_72">
+             <property name="text">
+              <string>Baudrate</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="receiverbaudrate"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>205</width>
+          <height>317</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Data sequence</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_19">
+         <item row="0" column="0">
+          <layout class="QFormLayout" name="formLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_55">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_81">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_82">
+             <property name="text">
+              <string>3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_83">
+             <property name="text">
+              <string>4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_84">
+             <property name="text">
+              <string>5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_85">
+             <property name="text">
+              <string>6</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_86">
+             <property name="text">
+              <string>7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_87">
+             <property name="text">
+              <string>8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_88">
+             <property name="text">
+              <string>9</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="label_89">
+             <property name="text">
+              <string>10</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="label_90">
+             <property name="text">
+              <string>11</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <widget class="QLabel" name="label_91">
+             <property name="text">
+              <string>12</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="data1"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="data2"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="data3"/>
+           </item>
+           <item row="3" column="1">
+            <widget class="QComboBox" name="data4"/>
+           </item>
+           <item row="4" column="1">
+            <widget class="QComboBox" name="data5"/>
+           </item>
+           <item row="5" column="1">
+            <widget class="QComboBox" name="data6"/>
+           </item>
+           <item row="6" column="1">
+            <widget class="QComboBox" name="data7"/>
+           </item>
+           <item row="7" column="1">
+            <widget class="QComboBox" name="data8"/>
+           </item>
+           <item row="8" column="1">
+            <widget class="QComboBox" name="data9"/>
+           </item>
+           <item row="9" column="1">
+            <widget class="QComboBox" name="data10"/>
+           </item>
+           <item row="10" column="1">
+            <widget class="QComboBox" name="data11"/>
+           </item>
+           <item row="11" column="1">
+            <widget class="QComboBox" name="data12"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>430</y>
+          <width>206</width>
+          <height>77</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Rocket model</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_20">
+         <item row="0" column="0">
+          <layout class="QFormLayout" name="formLayout_3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_94">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="rocketmodel"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_95">
+             <property name="text">
+              <string>Texture</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="rockettexture"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
